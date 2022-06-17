@@ -1,4 +1,4 @@
-package dev.gafilianog.pelem;
+package com.github.juviga.pelem;
 
 import org.junit.Test;
 

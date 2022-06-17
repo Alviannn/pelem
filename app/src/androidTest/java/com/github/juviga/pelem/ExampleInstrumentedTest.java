@@ -1,4 +1,4 @@
-package dev.gafilianog.pelem;
+package com.github.juviga.pelem;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("dev.gafilianog.pelem", appContext.getPackageName());
+        assertEquals("com.github.juviga.pelem", appContext.getPackageName());
     }
 }
