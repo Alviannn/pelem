@@ -16,7 +16,8 @@ public class SimpleMovie {
     private double popularity;
     @SerializedName("vote_average")
     private double voteAverage;
-    private double voteCount;
+    @SerializedName("vote_count")
+    private int voteCount;
 
     @SerializedName("original_language")
     private String language;
