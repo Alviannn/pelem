@@ -20,4 +20,10 @@ public interface MovieService {
     @GET("movie/upcoming?api_key=" + SharedData.API_KEY)
     Call<Pagination> getUpcoming(@Query("page") int page);
 
+    @GET("movie/now_playing?api_key=" + SharedData.API_KEY)
+    Call<Pagination> getNowPlaying(@Query("page") int page);
+
+    @GET("search/movie?api_key=" + SharedData.API_KEY)
+    Call<Pagination> search(@Query("query") String title, @Query("page") int page);
+
 }
