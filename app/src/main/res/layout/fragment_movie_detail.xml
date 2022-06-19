@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A40"
+    android:padding="16dp"
+    android:fillViewport="true"
+    tools:context=".MovieDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_backdrop_holder"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/img_backdrop"
+                android:alpha="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/avatars"
+                tools:ignore="ContentDescription" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/img_cover"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:elevation="1dp"
+            android:layout_marginTop="-110dp"
+            android:layout_gravity="center"
+            tools:src="@tools:sample/avatars"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            tools:text="Snowden" />
+
+        <TextView
+            android:id="@+id/tv_genre_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_genre"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_genre_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Drama, History, Crime, Thriller"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:id="@+id/tv_overview_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_overview"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_overview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="CIA employee Edward Snowden leaks thousands of classified documents to the press."
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:id="@+id/tv_popularity_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_popularity"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_popularity_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="71% User Score"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:id="@+id/tv_release_date_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_release_date"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_release_date_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="09/16/2016"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:id="@+id/tv_status_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_status"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_status_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Released"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:id="@+id/tv_company_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_companies"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_company_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Lorem Ipsum"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginStart="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>
