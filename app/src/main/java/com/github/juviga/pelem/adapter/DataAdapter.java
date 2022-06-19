@@ -11,10 +11,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.github.juviga.pelem.R;
+import com.github.juviga.pelem.SharedData;
 import com.github.juviga.pelem.models.SimpleMovie;
 
 import java.util.List;
@@ -44,7 +46,13 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         Glide.with(context)
                 .load("https://image.tmdb.org/t/p/w600_and_h900_bestv2" + movies.get(position).getPosterPath())
                 .into(holder.filmImage);
+        holder.filmDetail.setOnClickListener(toDetail->{
+            //change fragment gaf
+            SharedData.idMovie = movies.get(position).getId();
 
+
+
+        });
     }
 
     @Override

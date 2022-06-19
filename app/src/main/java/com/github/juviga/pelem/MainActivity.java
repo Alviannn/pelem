@@ -2,6 +2,8 @@ package com.github.juviga.pelem;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -12,6 +14,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
+
+    EditText searchBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +29,14 @@ public class MainActivity extends AppCompatActivity {
 
         SharedData.MOVIE_SERVICE = retrofit.create(MovieService.class);
 
+        searchBox = findViewById(R.id.searchBox);
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         Log.d("test", "masuk");
         fragmentManager.beginTransaction().replace(R.id.fragment_container, new MainFragment()).commit();
     }
 
+    public void changeFragment(View view) {
+        String searchText = searchBox.getText().toString().trim();
+    }
 }

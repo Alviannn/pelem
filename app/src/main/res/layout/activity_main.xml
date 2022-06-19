@@ -24,6 +24,7 @@
         android:layout_marginRight="20sp">
 
         <EditText
+            android:id="@+id/searchBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10sp"
@@ -37,6 +38,8 @@
             android:background="@color/white">
 
             <ImageView
+                android:onClick="changeFragment"
+                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/ic_baseline_search_24"/>
