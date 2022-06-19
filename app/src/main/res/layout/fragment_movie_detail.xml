@@ -54,7 +54,6 @@
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -66,7 +65,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_genre"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -75,11 +73,10 @@
             android:id="@+id/tv_genre_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Drama, History, Crime, Thriller"
-            android:fontFamily="@font/poppins"
+            android:layout_marginStart="24dp"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
-            android:layout_marginStart="24dp" />
+            tools:text="Drama, History, Crime, Thriller" />
 
         <TextView
             android:id="@+id/tv_overview_info"
@@ -87,7 +84,6 @@
             android:layout_height="wrap_content"
             android:text="@string/text_overview"
             android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -97,7 +93,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="CIA employee Edward Snowden leaks thousands of classified documents to the press."
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:layout_marginStart="24dp" />
@@ -108,7 +103,6 @@
             android:layout_height="wrap_content"
             android:text="@string/text_popularity"
             android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -118,7 +112,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="71% User Score"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:layout_marginStart="24dp" />
@@ -129,7 +122,6 @@
             android:layout_height="wrap_content"
             android:text="@string/text_release_date"
             android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -139,7 +131,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="09/16/2016"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:layout_marginStart="24dp" />
@@ -150,7 +141,6 @@
             android:layout_height="wrap_content"
             android:text="@string/text_status"
             android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -160,7 +150,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="Released"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:layout_marginStart="24dp" />
@@ -171,7 +160,6 @@
             android:layout_height="wrap_content"
             android:text="@string/text_companies"
             android:layout_marginTop="8dp"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -181,7 +169,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="Lorem Ipsum"
-            android:fontFamily="@font/poppins"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             android:layout_marginStart="24dp" />
