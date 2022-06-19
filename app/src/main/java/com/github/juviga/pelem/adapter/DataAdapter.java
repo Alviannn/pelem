@@ -51,8 +51,9 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         holder.filmDetail.setOnClickListener(toDetail->{
             //change fragment gaf
             SharedData.idMovie = movies.get(position).getId();
-            Intent toDetailPage = new Intent(context, DetailActivity.class);
-            context.startActivity(toDetailPage);
+            context.startActivity(new Intent(this.context, DetailActivity.class));
+
+
         });
     }
 

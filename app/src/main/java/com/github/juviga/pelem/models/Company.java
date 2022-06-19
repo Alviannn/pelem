@@ -17,6 +17,10 @@ public class Company {
     @SerializedName("logo_path")
     private String logoPath;
 
+    public String getName() {
+        return name;
+    }
+
     @NonNull
     @Override
     public String toString() {
