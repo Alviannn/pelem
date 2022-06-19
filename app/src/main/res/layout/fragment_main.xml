@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Popular Movies"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popularView"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        tools:listitem="@layout/template_film"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Now Playing Movies"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nowPlayingView"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        tools:listitem="@layout/template_film"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Movies"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcomingView"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        tools:listitem="@layout/template_film"/>
+
+
+
+</LinearLayout>

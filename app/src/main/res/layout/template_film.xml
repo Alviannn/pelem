@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="90sp"
+    android:layout_height="130sp"
+    android:layout_margin="10sp">
+
+    <ImageView
+        android:id="@+id/filmImage"
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/filmTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Film Title"
+        android:textAlignment="center"/>
+
+</LinearLayout>
