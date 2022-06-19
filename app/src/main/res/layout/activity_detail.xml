@@ -7,7 +7,7 @@
     android:background="#1A1A40"
     android:padding="16dp"
     android:fillViewport="true"
-    tools:context=".MovieDetailFragment">
+    tools:context=".DetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <ImageView
-            android:id="@+id/img_cover"
+            android:id="@+id/img_poster"
             android:layout_width="150dp"
             android:layout_height="220dp"
             android:scaleType="centerCrop"
