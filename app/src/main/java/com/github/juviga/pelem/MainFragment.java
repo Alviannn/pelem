@@ -73,6 +73,8 @@ public class MainFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
+
+
         SharedData.MOVIE_SERVICE.getPopulars(1).enqueue(new Callback<Pagination>() {
             @Override
             public void onResponse(retrofit2.Call<Pagination> call, Response<Pagination> response) {

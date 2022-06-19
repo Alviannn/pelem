@@ -1,8 +1,10 @@
 package com.github.juviga.pelem;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import com.github.juviga.pelem.services.MovieService;
 
@@ -22,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         SharedData.MOVIE_SERVICE = retrofit.create(MovieService.class);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Log.d("test", "masuk");
+        fragmentManager.beginTransaction().replace(R.id.fragment_container, new MainFragment()).commit();
     }
 
 }

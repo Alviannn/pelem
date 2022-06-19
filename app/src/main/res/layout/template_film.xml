@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="90sp"
-    android:layout_height="130sp"
-    android:layout_margin="10sp">
+    android:layout_height="160sp"
+    android:layout_margin="10sp"
+    android:id="@+id/filmDetail"
+    android:clickable="true">
 
     <ImageView
         android:id="@+id/filmImage"
         android:layout_width="match_parent"
-        android:layout_height="110sp"
+        android:layout_height="140sp"
         android:background="@color/black"/>
 
     <TextView
@@ -16,6 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Film Title"
+        android:textColor="@color/white"
         android:textAlignment="center"/>
 
 </LinearLayout>

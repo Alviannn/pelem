@@ -13,5 +13,6 @@ public class SharedData {
     public static List<SimpleMovie>popularList = new ArrayList<>();
     public static List<SimpleMovie>nowPlayingList = new ArrayList<>();
     public static List<SimpleMovie>upcomingList = new ArrayList<>();
+    public static SimpleMovie currentMovie;
 
 }

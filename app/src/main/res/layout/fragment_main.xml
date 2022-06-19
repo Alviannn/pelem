@@ -4,39 +4,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#1A1A40"
+    android:padding="10sp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Popular Movies"/>
+        android:text="Popular Movies"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/popularView"
         android:layout_width="match_parent"
-        android:layout_height="150sp"
+        android:layout_height="180sp"
         tools:listitem="@layout/template_film"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Now Playing Movies"/>
+        android:text="Now Playing Movies"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/nowPlayingView"
         android:layout_width="match_parent"
-        android:layout_height="150sp"
+        android:layout_height="180sp"
         tools:listitem="@layout/template_film"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Upcoming Movies"/>
+        android:text="Upcoming Movies"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/upcomingView"
         android:layout_width="match_parent"
-        android:layout_height="150sp"
+        android:layout_height="180sp"
         tools:listitem="@layout/template_film"/>
 
 
