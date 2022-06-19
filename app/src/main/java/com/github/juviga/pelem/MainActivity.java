@@ -1,3 +1,9 @@
+/**
+ * Juan Trilnardo Defrin - 2440021230
+ * Alvian Daru Quthni - 2440113686
+ * Gafiliano Gapili - 2440113591
+ */
+
 package com.github.juviga.pelem;
 
 import android.os.Bundle;
