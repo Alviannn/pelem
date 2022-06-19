@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changeFragment(View view) {
-        String searchText = searchBox.getText().toString().trim();
+        SharedData.searchText = searchBox.getText().toString().trim();
+        if(!SharedData.searchText.isEmpty()){
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.fragment_container, new SearchFragment()).commit();
+        }
     }
 }

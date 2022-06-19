@@ -1,6 +1,7 @@
 package com.github.juviga.pelem.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.github.juviga.pelem.DetailActivity;
 import com.github.juviga.pelem.R;
 import com.github.juviga.pelem.SharedData;
 import com.github.juviga.pelem.models.SimpleMovie;
@@ -49,9 +51,8 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         holder.filmDetail.setOnClickListener(toDetail->{
             //change fragment gaf
             SharedData.idMovie = movies.get(position).getId();
-
-
-
+            Intent toDetailPage = new Intent(context, DetailActivity.class);
+            context.startActivity(toDetailPage);
         });
     }
 
